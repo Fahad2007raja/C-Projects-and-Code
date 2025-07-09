@@ -5,28 +5,25 @@ using namespace std;
 int main(){
 
     char ch;
-    cout<<"Enter your choice not other than \n C for Cylinder \n and T for Trapezoid"<<endl;
+    cout<<"Enter your choice not other than \n C for Circle \n and T for Triangle"<<endl;
     cin>>ch;
 
     if(ch == 'C'){
-        float volume,r,h;
-    cout<<"Enter the radius of cylinder:"<<endl;
+        int area,r;
+    cout<<"Enter radius :"<<endl;
     cin>>r;
-    cout<<"Enter the height of cylinder:"<<endl;
-    cin>>h;
-    volume=3.14*r*r*h;
-    cout<<"Volume of cylinder:"<<volume<<endl;
-
+    area= 2*3.1416*r;
+    cout<<"Area of circle: "<<area<<endl;
     }
     else{
-        float parameter,area,a,b,c,d,h;
-   cout<<"Enter values : "<<endl;
-   cin>>a>>b>>c>>d>>h;
-   
-   parameter=a+b+c+d;
-   cout<<"parameter:"<<parameter<<endl;
-   area=h*a*0.5+h*b*0.5;
-   cout<<"area"<<area<<endl;
+        float area,b,h;
+    cout<<"Enter value of b :"<<endl;
+    cin>>b;
+    cout<<"Enter value of h :"<<endl;
+    cin>>h;
+    
+    area=0.5*b*h;
+    cout<<"Area: "<<area;
     }
     return 0;
 }
