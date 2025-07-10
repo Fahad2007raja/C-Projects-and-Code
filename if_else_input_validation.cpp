@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    string  username,password;
+    string  username, password;
     cout<<"Enter username "<<endl;
     cin>>username;
     cout<<"Enter password "<<endl;
