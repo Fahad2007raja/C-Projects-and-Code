@@ -3,19 +3,17 @@ using namespace std;
 int main()
 {
     int x;
-    cout<<"(1 for circle,2 for triangle, 3 for trapezoid,4 for parallelogram) :"<<endl;
+    cout<<"(1 for circle, \n2 for triangle,\n3 for trapezoid,\n4 for parallelogram) :"<<endl;
     cin>>x;
-    if( x==1 || x==2 || x==3 || x==4 )
-    {
-        if (x==1)
+    if (x==1)
         {
              int area,r;
     cout<<"Enter radius :"<<endl;
     cin>>r;
     area= 2*3.1416*r;
     cout<<"Area of circle: "<<area<<endl;
-        }
-        else if (x==2)
+    }
+    else if (x==2)
         {
             float area,b,h;
     cout<<"Enter value of b :"<<endl;
@@ -25,8 +23,8 @@ int main()
     
     area=0.5*b*h;
     cout<<"Area: "<<area;
-        }
-        else if (x==3)
+    }
+    else if (x==3)
         {
              float parameter,area,a,b,c,d,h;
    cout<<"Enter value of a: "<<endl;
@@ -44,7 +42,7 @@ int main()
    area=h*a*0.5+h*b*0.5;
    cout<<"area"<<area<<endl;
         }
-        else{
+else if(x==4){
             float parameter,a,b,h,area;
 cout<<"Enter value of a"<<endl;
 cin>>a;
@@ -56,8 +54,7 @@ parameter=2*a+2*b;
 cout<<"Parameter:"<<parameter<<endl;
 area=b*h;
 cout<<"Area: "<<area;
-        }
-    }
+}
     else{
         cout<<"Invalid input :"<<endl;
     }
