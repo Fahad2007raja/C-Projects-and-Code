@@ -151,6 +151,7 @@ int main()
     {
         cout<<"You need to drink more water"<<endl;
     }
+    cout<<"BMI :"<<endl;
    if (BMI<18.5)
     {
         cout<<"Underweight "<<endl;
@@ -167,7 +168,7 @@ int main()
     {
         cout<<"You are obese "<<endl;
     }
-   
+    cout<<"Sleep status :"<<endl;
     if (sleep<3)
     {
         cout<<"You need rest!"<<endl;
